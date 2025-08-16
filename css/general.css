@@ -124,3 +124,94 @@ animation: blink 1s infinite;
     0%, 50% { opacity: 1; }
     51%, 100% { opacity: 0; }
 }
+
+.projects-section {
+    height: 100vh;
+
+}
+
+/* needs to get centered between my name
+.view-projects {
+    padding: 0.2rem .8rem;
+    background-color: #f6f6f6;
+    color: #982f2a;
+    border: 2px solid #666666;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 164px; /* Adjust this value as needed
+    font-weight: bold;
+    font-family: 'sfmono', monospace;
+    text-align: center;
+    margin-left: 156px;
+    margin-top: 20px;
+}
+*/
+
+.arrow-container {
+    display: block;
+    width: 100px;
+    height: 64px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(0deg);
+    text-decoration: none;
+    z-index: 10;
+}
+
+.arrow-container.scrolled {
+    cursor: pointer;
+}
+
+.arrow-container.scrolled .arrow {
+    top: 50%;
+}
+
+.arrow-container.scrolled .arrow:before {
+    transform: translate(-50%, -50%) rotateZ(-30deg);
+}
+
+.arrow-container.scrolled .arrow:after {
+    transform: translate(-50%, -50%) rotateZ(30deg);
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    transition: all 0.4s ease;
+}
+
+.arrow:before,
+.arrow:after {
+    transition: all 0.4s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    transform-origin: bottom right;
+    background: #982f2a;
+    width: 4px;
+    height: 25px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+.arrow:after {
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+/* Individual arrow positioning and opacity */
+.arrow:nth-child(1) {
+    opacity: 0.3;
+    top: 35%;
+}
+
+.arrow:nth-child(2) {
+    opacity: 0.6;
+    top: 55%;
+}
+
+.arrow:nth-child(3) {
+    opacity: 0.9;
+    top: 75%;
+}

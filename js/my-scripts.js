@@ -72,3 +72,15 @@ if (img.complete) {
     bg.style.webkitMaskImage = `url("${maskUrl}")`;
     bg.style.maskImage = `url("${maskUrl}")`;
 }
+
+window.addEventListener('scroll', function() {
+    const scrollArrow = document.getElementById('scrollArrow');
+    const scrollPosition = window.scrollY;
+    const scrollThreshold = 100; // Trigger after 100px of scrolling
+    
+    if (scrollPosition > scrollThreshold) {
+        scrollArrow.classList.add('scrolled');
+    } else {
+        scrollArrow.classList.remove('scrolled');
+    }
+});
