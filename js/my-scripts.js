@@ -185,3 +185,36 @@ projectsSection.addEventListener('wheel', (e) => {
 
 // Initialize arrows
 updateArrows();
+
+// click functionality to video overlays
+document.querySelectorAll('.video-overlay').forEach(overlay => {
+    overlay.addEventListener('click', function() {
+        // Here you would typically trigger video playback
+        console.log('Video play triggered for:', this.parentElement.querySelector('img').alt);
+        
+        // Example: Replace image with video (you would implement actual video logic)
+        const img = this.parentElement.querySelector('img');
+        this.style.display = 'none';
+        
+        // Add a subtle animation to indicate interaction
+        img.style.filter = 'brightness(0.8)';
+        setTimeout(() => {
+            img.style.filter = 'brightness(1)';
+            this.style.display = 'flex';
+        }, 1000);
+    });
+});
+
+// Add smooth scroll behavior for any internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});

@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -41,74 +42,80 @@
       </section>
     </main>
 
+      <!-- projects-container, projects-wrapper, project-card,
+      project-image, project-content, project-header, project-title
+      project-role, project-links, project-description, project-tech,
+      tech-tag, project-description, nav-arrow.. -->
+
     <section class="projects-section" id="projectsSection">
-      <div class="projects-title">
-        <h2>Projects</h2>
-        <p>Some of my recent work</p>
-      </div>
-      
-      <div class="projects-container" id="projectsContainer">
-          <div class="projects-wrapper" id="projectsWrapper">
-              <!-- Project 1 -->
-              <div class="project-card">
-                  <div class="project-image">
-                      <!-- Replace with your actual image -->
-                      <!-- <img src="assets/project1.gif" alt="Project 1"> -->
-                  </div>
-                  <div class="project-content">
-                      <div class="project-header">
-                          <h3 class="project-title">Robotic Arm Controller</h3>
-                          <p class="project-role">software development</p>
-                      </div>
-                      <div class="project-links">
-                          <a href="https://github.com/majockbim/robotic-arm-controller" target="_blank" class="project-link">GitHub</a>
-                      </div>
-                      <p class="project-description">
-                          lorem ipsum robitc arm controller using C++ and OpenCV, control servos with hand gestures lorem ipsum dolor arduino and PlatformIO IDE. lorem ipsum dolor sit amet
-                      </p>
-                      <div class="project-tech">
-                          <span class="tech-tag">C++</span>
-                          <span class="tech-tag">OpenCV</span>
-                          <span class="tech-tag">Arduino</span>
-                          <span class="tech-tag">PlatformIO IDE</span>
-                      </div>
-                  </div>
-              </div>
+        <h1 class="section-title">projects</h1>
+        
+        <!-- Project 1: Robotic Arm Controller -->
+        <div class="project-container">
+            <div class="project-content">
+                <div class="project-header">
+                    <h2 class="project-title">Robotic Arm Controller</h2>
+                    <p class="project-role">Software Developer</p>
+                </div>
+                <p class="project-description">
+                    DJ Toenail is a robotic arm that can play the piano. Controlled by a web
+                    application for song selection and movement control.
+                </p>
+                <div class="project-technologies">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Arduino</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/majockbim/robotic-arm-controller" target="_blank" class="project-link">GitHub</a>
+                    <a href="#" class="project-link">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-video">
+                <img src="assets/videotest.jpg" alt="DJ Toenail Robotic Arm">
+                <div class="video-overlay">
+                    <div class="play-icon"></div>
+                </div>
+            </div>
+        </div>
 
-              <!-- Project 2 -->
-              <div class="project-card">
-                  <div class="project-image">
-                      <!-- Replace with your actual image -->
-                      <!-- <img src="assets/project2.gif" alt="Project 2"> -->
-                  </div>
-                  <div class="project-content">
-                      <div class="project-header">
-                          <h3 class="project-title">ConnectIn</h3>
-                          <p class="project-role">backend development</p>
-                      </div>
-                      <div class="project-links">
-                          <a href="#" class="project-link">Live Demo</a>
-                          <a href="https://github.com/majockbim/connectin" target="_blank" class="project-link">GitHub</a>
-                      </div>
-                      <p class="project-description">
-                          lorem ipsum collaborated with lorem ipsum connected frontend using RESTful APIs lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      </p>
-                      <div class="project-tech">
-                          <span class="tech-tag">Python</span>
-                          <span class="tech-tag">FastAPI</span>
-                          <span class="tech-tag">Mistral AI</span>
-                          <span class="tech-tag">PlayWright</span>
-                          <span class="tech-tag">BeautifulSoup</span>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        <!-- Project 2: ConnectIn -->
+        <div class="project-container">
+            <div class="project-content">
+                <div class="project-header">
+                    <h2 class="project-title">ConnectIn</h2>
+                    <p class="project-role">Backend Developer</p>
+                </div>
+                <p class="project-description">
+                    Modern e-commerce platform with real-time inventory, secure payments,
+                    and analytics dashboard. Features user auth, cart, and order tracking.
+                </p>
+                <div class="project-technologies">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Mistral 7B AI</span>
+                    <span class="tech-tag">Playwright</span>
+                    <span class="tech-tag">BeautifulSoup</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="project-link">GitHub</a>
+                    <a href="#" class="project-link">Live Site</a>
+                </div>
+            </div>
+            <div class="project-video">
+                <img src="assets/videotest.jpg" alt="dj toenail">
+                <div class="video-overlay">
+                    <div class="play-icon"></div>
+                </div>
+            </div>
+        </div>
 
-          <!-- Navigation arrows -->
-          <div class="nav-arrow nav-arrow-left" id="leftArrow"></div>
-          <div class="nav-arrow nav-arrow-right visible" id="rightArrow"></div>
-      </div>
     </section>
+
+    <section class="footer">
+      <p class="footer-text">© 2025 Majock Bim. All rights reserved.</p>
+    </section>
+
 
     <a href="#" class="arrow-container" id="scrollArrow">
     <div class="arrow"></div>
