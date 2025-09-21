@@ -474,7 +474,7 @@ animation: blink 1s infinite;
 
 @media (max-width: 768px) {
     .projects-section {
-        padding: 30px 15px;
+        padding: 0 15px;
     }
 
     .project-container {
@@ -484,7 +484,6 @@ animation: blink 1s infinite;
 
     .section-title {
         font-size: 1.8rem;
-        margin-top: 64px;
         margin-bottom: 25px;
     }
 
@@ -502,7 +501,6 @@ animation: blink 1s infinite;
 .animated-arrow {
     position: relative;
     height: 64px;
-    /* margin-top: 68.4px;  Remove this to prevent extra space at small widths */
     display: flex;
     align-items: center;
     justify-content: center;
