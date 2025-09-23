@@ -505,3 +505,17 @@ animation: blink 1s infinite;
     align-items: center;
     justify-content: center;
 }
+
+.phome, .pprojects, .pcontact {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
