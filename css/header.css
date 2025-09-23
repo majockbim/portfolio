@@ -32,3 +32,15 @@
     gap: 40px;
     margin-right: 84px;
 }
+
+::-webkit-scrollbar {
+    display: none; /* Chrome, Edge */
+}
+
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari, Chromium */
+}
+
+/* For Firefox 
+    [???]
+*/
