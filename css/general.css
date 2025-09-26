@@ -388,10 +388,10 @@ animation: blink 1s infinite;
 }
 
 .project-link:hover {
-    background: #667eea;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    background: #fafafa;
+    color: #982f2a;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .project-video {
