@@ -1,6 +1,6 @@
 
 /*
-
+    Typewriter Effects
 */
 const prefix = "I";
 const phrases = [
@@ -44,7 +44,7 @@ type();
 
 
 /*
-
+    Source: https://jsfiddle.net/0ye6n3a9/
 */
 const container = document.querySelector(".hero-image");
 function map(value, fromStart, fromEnd, toStart, toEnd) {
@@ -80,130 +80,6 @@ if (img.complete) {
     bg.style.webkitMaskImage = `url("${maskUrl}")`;
     bg.style.maskImage = `url("${maskUrl}")`;
 }
-
-window.addEventListener('scroll', function() {
-    const scrollArrow = document.getElementById('scrollArrow');
-    const scrollPosition = window.scrollY;
-    const scrollThreshold = 100; // Trigger after 100px of scrolling
-    
-    if (scrollPosition > scrollThreshold) {
-        scrollArrow.classList.add('scrolled');
-    } else {
-        scrollArrow.classList.remove('scrolled');
-    }
-});
-
-
-/*
-
-*/
-const projectsWrapper = document.getElementById('projectsWrapper');
-const leftArrow = document.getElementById('leftArrow');
-const rightArrow = document.getElementById('rightArrow');
-const projectsSection = document.getElementById('projectsSection');
-const projectsContainer = document.getElementById('projectsContainer');
-
-let currentProject = 0;
-const totalProjects = 2;
-
-/*
-function updateArrows() {
-    // Show/hide arrows with smooth transitions
-    if (currentProject === 0) {
-        leftArrow.classList.remove('visible');
-        rightArrow.classList.add('visible');
-        // Show right blur, hide left blur
-        projectsContainer.classList.remove('show-left-blur');
-        projectsContainer.classList.remove('hide-right-blur');
-    } else if (currentProject === totalProjects - 1) {
-        leftArrow.classList.add('visible');
-        rightArrow.classList.remove('visible');
-        // Show left blur, hide right blur
-        projectsContainer.classList.add('show-left-blur');
-        projectsContainer.classList.add('hide-right-blur');
-    }
-}
-
-*/
-
-function scrollToProject(index) {
-  const cards = projectsWrapper.querySelectorAll('.project-card');
-  const first = cards[0];
-  const last  = cards[cards.length - 1];
-
-  const containerWidth = projectsContainer.clientWidth;
-
-  // The initial left spacing of project 1 (10px margin-left)
-  const peekDistance = first.offsetLeft;
-
-  if (index === 0) {
-    // Project 1 focused: 10px (peekDistance) from the left
-    projectsWrapper.style.transform = 'translateX(0px)';
-  } else {
-    // Project 2 focused: its RIGHT edge should be (containerWidth - peekDistance)
-    const lastStyles = getComputedStyle(last);
-    const lastMarginRight = parseFloat(lastStyles.marginRight) || 0;
-
-    // Right edge of last card within the wrapper’s coordinate system
-    const lastRight = last.offsetLeft + last.offsetWidth + lastMarginRight;
-
-    // We want: (lastRight - translate) = containerWidth - peekDistance
-    const translate = lastRight - (containerWidth - peekDistance);
-
-    projectsWrapper.style.transform = `translateX(${-translate}px)`;
-  }
-
-  currentProject = index;
-  updateArrows();
-}
-
-// keep alignment correct on viewport changes
-window.addEventListener('resize', () => {
-  scrollToProject(currentProject);
-});
-
-
-
-// Arrow click handlers
-leftArrow.addEventListener('click', () => {
-    if (currentProject > 0) {
-        scrollToProject(currentProject - 1);
-    }
-});
-
-rightArrow.addEventListener('click', () => {
-    if (currentProject < totalProjects - 1) {
-        scrollToProject(currentProject + 1);
-    }
-});
-
-// Prevent wheel scrolling in projects section only
-projectsSection.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-}, { passive: false });
-
-// Initialize arrows
-updateArrows();
-
-// click functionality to video overlays
-document.querySelectorAll('.video-overlay').forEach(overlay => {
-    overlay.addEventListener('click', function() {
-        // Here you would typically trigger video playback
-        console.log('Video play triggered for:', this.parentElement.querySelector('img').alt);
-        
-        // Example: Replace image with video (you would implement actual video logic)
-        const img = this.parentElement.querySelector('img');
-        this.style.display = 'none';
-        
-        // Add a subtle animation to indicate interaction
-        img.style.filter = 'brightness(0.8)';
-        setTimeout(() => {
-            img.style.filter = 'brightness(1)';
-            this.style.display = 'flex';
-        }, 1000);
-    });
-});
 
 // Add smooth scroll behavior for any internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
