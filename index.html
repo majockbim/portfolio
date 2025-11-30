@@ -20,8 +20,24 @@
         <p class="header-title">Majock B.</p>
       </div>
       <div class="header-content-right">
-        <p class="phome"><a href="#heroSection"><span class="home-txt">//</span> Home</a></p>
-        <p class="pprojects"><a href="/#projectsSection"><span class="projects-txt">//</span> Projects</a></p>
+        <p class="phome text-only">
+          <a href="#heroSection"><span class="home-txt">//</span> Home</a>
+        </p>
+        <p class="phome-icon icon-only">
+          <a href="#heroSection">
+            <img src="assets/home.png" class="nav-icon" alt="Home"/>
+          </a>
+        </p>
+        <p class="pprojects text-only">
+          <a href="/#projectsSection"><span class="projects-txt">//</span> Projects</a>
+        </p>
+        <p class="pprojects-icon icon-only">
+          <a href="/#projectsSection">
+            <img src="assets/gear.png" class="nav-icon" alt="Projects"/>
+          </a>
+        </p>
+
+
         <p class="pcontact"><a href="https://github.com/majockbim" target="_blank"><img src="assets/git_pre.png" class="icon-image"><img></a></p>
         <p class="pcontact"><a href="https://www.linkedin.com/in/majockbim/" target="_blank"><img src="assets/linkedin_icon.png" class="icon-image"><img></a></p>
       </div>
@@ -77,8 +93,10 @@
                 </div>
             </div>
             <div class="project-video">
-                <img src="assets/robot boomerang.gif" alt="Robotic Arm">
-
+              <video autoplay loop muted playsinline id="background-video">
+                <source src="assets/robot-hand-gesture-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
         </div>
 

@@ -9,6 +9,7 @@
     z-index: 1000;
     flex-direction: row;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 2 4vw;
 }
 
 .header-title {
@@ -21,7 +22,10 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    margin-left: 20px;
+}
+
+.header-content-right p {
+    margin: 0;
 }
 
 .header-content-right {
@@ -30,7 +34,6 @@
     align-items: center;
     width: 100%;
     gap: 40px;
-    margin-right: 84px;
 }
 
 ::-webkit-scrollbar {
@@ -41,6 +44,41 @@
     display: none;  /* Safari, Chromium */
 }
 
-/* For Firefox 
-    [???]
-*/
+.text-only {
+    display: block; 
+}
+
+/* Hide the new icon links on large screens */
+.icon-only {
+    display: none; 
+}
+
+.nav-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+@media (max-width: 624px) {
+    
+    /* 1. HIDE the text links ("Home" and "Projects") */
+    .text-only {
+        display: none; 
+    }
+
+    /* 2. SHOW the new icon links (House and Gear) */
+    .icon-only {
+        display: block; 
+    }
+    
+    /* Optional: Adjust existing icon sizes for consistency */
+    .icon-image { /* Targets Github/LinkedIn */
+        width: 24px;
+        height: 24px;
+    }
+    
+    .header-content-right {
+        gap: 20px; /* Reduces space between elements */
+    }
+    
+}

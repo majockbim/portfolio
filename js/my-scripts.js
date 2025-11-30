@@ -94,3 +94,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+// Scroll arrow animation on scroll
+window.addEventListener('scroll', function() {
+
+    const scrollArrow = document.getElementById('scrollArrow');
+    const scrollPosition = window.scrollY;
+    const scrollThreshold = 100; // Trigger after 100px of scrolling
+
+    if (scrollPosition > scrollThreshold) {
+
+        scrollArrow.classList.add('scrolled');
+
+    } else {
+
+        scrollArrow.classList.remove('scrolled');
+    }
+});
