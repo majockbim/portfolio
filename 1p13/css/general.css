@@ -1,0 +1,121 @@
+/* Styles for 1p13 projects section */
+
+/* allow the footer to stay at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* center the rectangles (main wrapper) */
+.content-wrapper {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 50px; /* space between sections */
+}
+
+.info-rectangle {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    
+    width: 100%;
+    max-width: 950px; 
+    min-height: 450px; /* to be adjusted based on amt of text */
+    
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-rectangle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* left side of rectange -> text */
+.info-text {
+    flex: 1.1; /* control ratio between text and image */
+    padding: 40px;
+}
+
+.info-text h2 {
+    color: #982f2a;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.info-text p {
+    color: #333;
+    line-height: 1.7;
+    font-size: 1rem;
+    display: block; 
+}
+
+/* right side of rectangle -> image */
+.info-image-container {
+    flex: 1;
+    align-self: stretch; /* ensure height matches */
+    background-color: #f0f0f0;
+}
+
+.info-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* dont let image stretch */
+    display: block;
+}
+
+/* stack boxes vertically when the screen is narrow (Mobile compatiability) */
+@media (max-width: 850px) {
+    .info-rectangle {
+        flex-direction: column;
+        max-width: 500px; 
+    }
+    
+    .info-image-container {
+        width: 100%;
+        height: 250px;
+        order: -1;
+    }
+}
+
+/* main title */
+.title {
+    text-align: center;
+    /* header is 64, so upper margin is 20+64  
+       lower is 0 since there is margin in content-wrapper*/
+    margin: 84px 0 0 0;
+    width: 100%;
+}
+
+.project-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.8rem; 
+    color: #000;    
+    margin: 0;
+    font-weight: bold;
+    
+    position: relative;
+    display: inline-block;
+}
+
+.project-title::after {
+    content: "Robotic End Effector";
+    color: #982f2a;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.temp-fix {
+    margin-right: 24px; /* to fix left padding issue with header ^_^ */
+}
