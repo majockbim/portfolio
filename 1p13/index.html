@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="css/general.css"> <link rel="icon" type="image/png" href="../assets/palkia_square.png" />
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
 
@@ -49,53 +50,71 @@
     </div>
 
     <main class="content-wrapper">
-      
+
       <div class="info-rectangle">
           <div class="info-text">
-              <h2>Objective</h2>
-              <p>Box Description
-                <br>- first of all i look good in this shirt
-                <br>- second of all i look good in this shirt
-                <br>- and third of all i look good in this shirt
-              </p>
+              <div class="text-content-middle">
+                  <h2>Objective</h2>
+                  <p>
+                      Box Description
+                      <br>- first of all i look good in this shirt
+                      <br>- second of all i look good in this shirt
+                  </p>
+              </div>
+
+              <p class="image-caption" id="caption-objective">figure 1 - Jane Remover & The Guys</p>
           </div>
+          
           <div class="info-image-container">
-              <img src="../assets/placeholder1.jpg" alt="Concept Design">
+              <button class="nav-arrow prev" onclick="changeImage('objective', -1)">&#10094;</button>
+              <img id="img-objective" src="assets/one.jpg" alt="Project Image">
+              <button class="nav-arrow next" onclick="changeImage('objective', 1)">&#10095;</button>
           </div>
       </div>
 
       <div class="info-rectangle">
           <div class="info-text">
-              <h2>My Role</h2>
-              <p>Box Description
-                <br>- first of all i look good in this shirt
-                <br>- second of all i look good in this shirt
-                <br>- and third of all i look good in this shirt
-              </p>
+              <div class="text-content-middle">
+                  <h2>My Role</h2>
+                  <p>
+                      Box Description
+                      <br>- first of all i look good in this shirt
+                      <br>- second of all i look good in this shirt
+                  </p>
+              </div>
+
+              <p class="image-caption" id="caption-role">figure 1 - Jane Remover & The Guys</p>
           </div>
+          
           <div class="info-image-container">
-              <img src="../assets/your-new-image.jpg" alt="New Section Image">
+              <button class="nav-arrow prev" onclick="changeImage('role', -1)">&#10094;</button>
+              <img id="img-role" src="assets/one.jpg" alt="Project Image">
+              <button class="nav-arrow next" onclick="changeImage('role', 1)">&#10095;</button>
           </div>
       </div>
 
       <div class="info-rectangle">
           <div class="info-text">
-              <h2>Reflection</h2>
-              <p>Box Description
-                <br>- first of all i look good in this shirt
-                <br>- second of all i look good in this shirt
-                <br>- and third of all i look good in this shirt
-              </p>
+              <div class="text-content-middle">
+                  <h2>Reflection</h2>
+                  <p>
+                      Box Description
+                      <br>- first of all i look good in this shirt
+                      <br>- second of all i look good in this shirt
+                  </p>
+              </div>
+
+              <p class="image-caption" id="caption-reflection">figure 1 - Jane Remover & The Guys</p>
           </div>
+          
           <div class="info-image-container">
-              <img src="../assets/your-new-image.jpg" alt="New Section Image">
+              <button class="nav-arrow prev" onclick="changeImage('reflection', -1)">&#10094;</button>
+              <img id="img-reflection" src="assets/one.jpg" alt="Project Image">
+              <button class="nav-arrow next" onclick="changeImage('reflection', 1)">&#10095;</button>
           </div>
       </div>
 
     </main>
-
-    <script src="../script.js"></script>
-
     <section class="footer">
       <p class="footer-text">© 2025 Majock Bim. All rights reserved.</p>
     </section>
