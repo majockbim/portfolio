@@ -25,8 +25,8 @@ body {
     border-radius: 12px;
     
     width: 100%;
-    max-width: 950px; 
-    min-height: 450px; /* to be adjusted based on amt of text */
+    max-width: 1100px; 
+    min-height: 350px; /* to be adjusted based on amt of text */
     
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
@@ -120,30 +120,31 @@ body {
     margin-right: 24px; /* to fix left padding issue with header ^_^ */
 }
 
-/* image captions */
 .info-rectangle {
     display: flex;
-    align-items: stretch; 
+    align-items: stretch; /* force both sides to be equal height */
+    
+    height: 450px; 
+    
+    width: 100%;
+    max-width: 1150px; 
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 15px;
-    width: 100%;
-    max-width: 950px; 
-    min-height: 450px;
     overflow: hidden;
-    padding: 0; 
+    position: relative;
 }
 
 /* text side */
 .info-text {
-    flex: 1.3;
+    flex: 1.1;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* This vertically centers the text-content-middle */
     position: relative; 
-    min-height: 450px; 
+    min-height: 350px; 
 }
 
 .text-content-middle {
@@ -170,11 +171,12 @@ body {
     text-transform: uppercase;
 }
 
-/* Image side */
+/* right side (image) */
 .info-image-container {
     flex: 1;
     position: relative;
-    background-color: #f0f0f0;
+    height: 100%;
+    overflow: hidden;
 }
 
 .info-image-container img {

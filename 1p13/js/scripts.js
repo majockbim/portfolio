@@ -1,17 +1,17 @@
 const projectData = {
     objective: {
-        images: ["assets/one.jpg", "assets/two.png", "assets/three.jpg"],
-        captions: ["figure 1 - Jane Remover & The Guys", "figure 2 - not sure", "figure 3 - another one"],
+        images: ["assets/qarm.jpg", "assets/3dmodel.png"],
+        captions: ["figure 1 - The Quanser Arm (Qarm)", "figure 2 - A 3D model of our end effector"],
         currentIndex: 0
     },
     role: {
-        images: ["assets/one.jpg", "assets/two.png", "assets/three.jpg"],
-        captions: ["figure 1 - Jane Remover & The Guys", "figure 2 - not sure", "figure 3 - another one"],
+        images: ["assets/code-snippet.png", "assets/mymodel.png", "assets/final-model.jpg"],
+        captions: ["figure 1 - A snippet from my lookup_products() function", "figure 2 - My original 3D model", "figure 3 - Our teams final design"],
         currentIndex: 0
     },
     reflection: {
-        images: ["assets/one.jpg", "assets/two.png", "assets/three.jpg"],
-        captions: ["figure 1 - Jane Remover & The Guys", "figure 2 - not sure", "figure 3 - another one"],
+        images: ["assets/fri-45.jpg"],
+        captions: ["figure 1 - A photo of the team :)",],
         currentIndex: 0
     }
 };
