@@ -6,7 +6,7 @@ const projectData = {
     },
     role: {
         images: ["assets/code-snippet.png", "assets/mymodel.png", "assets/final-model.jpg"],
-        captions: ["figure 1 - A snippet from my lookup_products() function", "figure 2 - My original 3D model", "figure 3 - Our teams final design"],
+        captions: ["figure 1 - A snippet from my lookup_products() function", "figure 2 - My original CAD model", "figure 3 - Our teams final design"],
         currentIndex: 0
     },
     reflection: {
