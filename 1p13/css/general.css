@@ -59,6 +59,27 @@ body {
     display: block; 
 }
 
+.info-text2 {
+    flex: 1.1; /* control ratio between text and image */
+    padding: 40px;
+}
+
+.info-text2 h2 {
+    color: #982f2a;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.info-text2 p {
+    color: #333;
+    line-height: 1.7;
+    font-size: 0.5rem;
+    display: block; 
+}
+
+
 /* right side of rectangle -> image */
 .info-image-container {
     flex: 1;
@@ -116,6 +137,26 @@ body {
     letter-spacing: 2px;
 }
 
+.project-title2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.8rem; 
+    color: #000;    
+    margin: 0;
+    font-weight: bold;
+    
+    position: relative;
+    display: inline-block;
+}
+
+.project-title2::after {
+    content: "Design Project 3";
+    color: #982f2a;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
 .temp-fix {
     margin-right: 24px; /* to fix left padding issue with header ^_^ */
 }
@@ -157,7 +198,10 @@ body {
     font-family: 'JetBrains Mono', monospace;
 }
 
-
+.txt-size {
+    font-size: 0.1rem;
+    color: #333;
+}
 
 .image-caption {
     position: absolute;
