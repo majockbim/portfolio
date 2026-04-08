@@ -40,3 +40,23 @@ window.addEventListener('DOMContentLoaded', () => {
     changeImage('role', 0);
     changeImage('reflection', 0);
 });
+
+function showProject(projectId, clickedButton) {
+    // 1. Hide all project sections
+    const allProjects = document.querySelectorAll('.project-section');
+    allProjects.forEach(project => {
+        project.classList.remove('active-project');
+    });
+
+    // 2. Remove the "active" styling from all tab buttons
+    const allTabs = document.querySelectorAll('.tab-button');
+    allTabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    // 3. Show the selected project
+    document.getElementById(projectId).classList.add('active-project');
+
+    // 4. Add the "active" styling to the button you just clicked
+    clickedButton.classList.add('active');
+}

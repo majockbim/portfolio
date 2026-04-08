@@ -49,91 +49,93 @@
       <h1 class="project-title">1P13 - Project 1</h1>
     </div>
 
-    <main class="content-wrapper">
-
-      <div class="info-rectangle">
-          <div class="info-text">
-              <div class="text-content-middle">
-                  <h2>Objective</h2>
-                  <p>
-                      <br>- Design and CAD a mechanical end effector that mounts to a <b>Quanser Arm</b>.
-                      <br>- Develop software to determine products to be packaged, and for control of the robotic arm's movement.
-                      <br>- Engineer a system that authenticates users, scans packages, computes costs, and packs them efficiently.
-                  </p>
-              </div>
-
-              <p class="image-caption" id="caption-objective">figure 1 - The Quanser Arm (Qarm)</p>
-          </div>
-          
-          <div class="info-image-container">
-              <button class="nav-arrow prev" onclick="changeImage('objective', -1)">&#10094;</button>
-              <img id="img-objective" src="assets/qarm.jpg" alt="Project Image">
-              <button class="nav-arrow next" onclick="changeImage('objective', 1)">&#10095;</button>
-          </div>
+  <main class="content-wrapper">
+      <div class="project-tabs">
+          <button class="tab-button active" onclick="showProject('project1', this)">Project 1</button>
+          <button class="tab-button" onclick="showProject('project3', this)">Project 3</button>
       </div>
 
-      <div class="info-rectangle">
-          <div class="info-text">
-              <div class="text-content-middle">
-                  <h2>My Role</h2>
-                  <p>
-                      <br>- Lead the <b>Python</b> programming by assembling and testing our team functions to optimize performance and ensure proper documentation.
-                      <br>- Managed the software verification and integration process by <b>debugging</b> the overall system, guaranteeing a working product.
-                      <br>- Advised on the mechanical design by proposing feautures from my individual <b>Autodesk Inventor</b> CAD model.
-                  </p>
+      <div id="project1" class="project-section active-project">
+          <div class="title" style="margin-top: 20px;">
+            <h1 class="project-title">1P13 - Project 1</h1>
+          </div>
+
+          <div class="info-rectangle">
+              <div class="info-text">
+                  <div class="text-content-middle">
+                      <h2>Objective</h2>
+                      <p>
+                          <br>- Design and CAD a mechanical end effector that mounts to a <b>Quanser Arm</b>.
+                          <br>- Develop software to determine products to be packaged, and for control of the robotic arm's movement.
+                          <br>- Engineer a system that authenticates users, scans packages, computes costs, and packs them efficiently.
+                      </p>
+                  </div>
+                  <p class="image-caption" id="caption-objective">figure 1 - The Quanser Arm (Qarm)</p>
               </div>
-
-              <p class="image-caption" id="caption-role">figure 1 - A snippet from my lookup_products() function</p>
-          </div>
-          
-          <div class="info-image-container">
-              <button class="nav-arrow prev" onclick="changeImage('role', -1)">&#10094;</button>
-              <img id="img-role" src="assets/code-snippet.jpg" alt="Project Image">
-              <button class="nav-arrow next" onclick="changeImage('role', 1)">&#10095;</button>
-          </div>
-      </div>
-
-      <div class="info-rectangle">
-          <div class="info-text">
-              <div class="text-content-middle">
-                  <h2>Reflection</h2>
-                  <p>
-                      <br>- Questioning my initial design approach caused me to pivot to a simpler, and more reliable final CAD model.
-                      <br>- If I could redo this project, I would focus more on time management to make sure all features of the project were tested and working on time.
-                      <br>- Overall, I learned much about teamwork in an engineering context, and I can't wait to apply these skills in future projects!
-                  </p>
+              <div class="info-image-container">
+                  <button class="nav-arrow prev" onclick="changeImage('objective', -1)">&#10094;</button>
+                  <img id="img-objective" src="assets/qarm.jpg" alt="Project Image">
+                  <button class="nav-arrow next" onclick="changeImage('objective', 1)">&#10095;</button>
               </div>
-
-              <p class="image-caption" id="caption-reflection">figure 1 - A photo of the team :)</p>
           </div>
-          
-          <div class="info-image-container">
-              <img id="img-reflection" src="assets/fri-45.jpg" alt="Project Image">
-          </div>
-      </div>
 
-    <div class="title">
-      <h1 class="project-title2">1P13 - Project 3</h1>
-    </div>
-
-      <div class="info-rectangle">
-          <div class="info-text2">
-              <div class="text-content-middle">
-                  <h2>In Depth Reflection</h2>
-                  <p class="txt-size">
-                    With a team of 5 individuals, we were tasked with engineering something for a client named Mark. As a team, we discussed our thoughts on the information provided on Mark, and decided on designing a dog poop scooper to help him with his struggles in picking up after his dog. The first thing we prioritized was thorough research. With the given information, such as the fact that he struggles to grip his current scooper due to the low amount of tension, we wanted to find the best materials for the challenge. I was tasked with researching materials and found that using standard PLA, which is a renewable thermoplastic used for 3D printing, would be best for the end of the scooper. PLA is lightweight and extremely customizable, which are important properties for our project. We went over our research as a team, and then started working on the physical product. We went through around 3 CAD based prototypes in total, and the design improved with each prototype. One challenge we faced through iteration was deciding how we would go about deciding on the pole for our mechanism. We spent a lot of time speaking about it as a team, and decided the best thing to do was buy a durable telescoping pole online, that way we could spend more time on the actual end of our mechanism. The outcome of communicating and testing early was having a lot more time to finalize our project in the future. By overcoming the obstacle of pole selection early on, we had plenty of time to attack other challenges of the project. Honestly, if we had done anything different such as delaying our decision making I think we wouldn’t have as much time to actually test the functionality of our mechanism, since we would be so caught up with deciding on how to approach the pole. From this experience, I learned that communicating effectively as a team leads to things getting done much faster. This is extremely valuable since good time management is an important skill to have as an engineer. In my future endeavors, I plan on prioritizing communication with the team, early iteration, and thorough research to save time in the future. 
-
-                  </p>
+          <div class="info-rectangle">
+              <div class="info-text">
+                  <div class="text-content-middle">
+                      <h2>My Role</h2>
+                      <p>
+                          <br>- Lead the <b>Python</b> programming by assembling and testing our team functions to optimize performance and ensure proper documentation.
+                          <br>- Managed the software verification and integration process by <b>debugging</b> the overall system, guaranteeing a working product.
+                          <br>- Advised on the mechanical design by proposing feautures from my individual <b>Autodesk Inventor</b> CAD model.
+                      </p>
+                  </div>
+                  <p class="image-caption" id="caption-role">figure 1 - A snippet from my lookup_products() function</p>
               </div>
-
+              <div class="info-image-container">
+                  <button class="nav-arrow prev" onclick="changeImage('role', -1)">&#10094;</button>
+                  <img id="img-role" src="assets/code-snippet.jpg" alt="Project Image">
+                  <button class="nav-arrow next" onclick="changeImage('role', 1)">&#10095;</button>
+              </div>
           </div>
-          
-          <div class="info-image-container">
-              <img id="img-reflection" src="assets/fri-38.jpg" alt="Project Image">
-          </div>
-      </div>
 
+          <div class="info-rectangle">
+              <div class="info-text">
+                  <div class="text-content-middle">
+                      <h2>Reflection</h2>
+                      <p>
+                          <br>- Questioning my initial design approach caused me to pivot to a simpler, and more reliable final CAD model.
+                          <br>- If I could redo this project, I would focus more on time management to make sure all features of the project were tested and working on time.
+                          <br>- Overall, I learned much about teamwork in an engineering context, and I can't wait to apply these skills in future projects!
+                      </p>
+                  </div>
+                  <p class="image-caption" id="caption-reflection">figure 1 - A photo of the team :)</p>
+              </div>
+              <div class="info-image-container">
+                  <img id="img-reflection" src="assets/fri-45.jpg" alt="Project Image">
+              </div>
+          </div>
+      </div> <div id="project3" class="project-section">
+          <div class="title" style="margin-top: 20px;">
+            <h1 class="project-title2">1P13 - Project 3</h1>
+          </div>
+
+          <div class="info-rectangle">
+              <div class="info-text2">
+                  <div class="text-content-middle">
+                      <h2>In Depth Reflection</h2>
+                      <p class="txt-size">
+                          With a team of 5 individuals, we were tasked with engineering something for a client named Mark... 
+                          (Text truncated here for brevity, keep your original full text!)
+                      </p>
+                  </div>
+              </div>
+              <div class="info-image-container">
+                  <img id="img-reflection" src="assets/fri-38.jpg" alt="Project Image">
+              </div>
+          </div>
+      </div> 
     </main>
+
     <section class="footer">
       <p class="footer-text">© 2026 Majock Bim. All rights reserved.</p>
     </section>
