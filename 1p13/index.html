@@ -41,17 +41,21 @@
 
         <p class="pcontact"><a href="https://github.com/majockbim" target="_blank"><img src="../assets/git_pre.png" class="icon-image" alt="GitHub"></a></p>
         <p class="pcontact"><a href="https://www.linkedin.com/in/majockbim/" target="_blank"><img src="../assets/linkedin_icon.png" class="icon-image" alt="LinkedIn"></a></p>
-        <div class="temp-fix"></div> <!-- to fix left padding issue - do not remove -->
-      </div>
+        <div class="temp-fix"></div> </div>
     </div> 
 
-    <div class="title">
-      <h1 class="project-title">1P13 - Project 1</h1>
-    </div>
+  <main class="content-wrapper">
+      <div class="project-tabs">
+          <button class="tab-button active" onclick="showProject('project1', this)">Project 1</button>
+          <button class="tab-button" onclick="showProject('project3', this)">Project 3</button>
+      </div>
 
-    <main class="content-wrapper">
+      <div id="project1" class="project-section active-project">
+          <div class="title" style="margin-top: 20px;">
+            <h1 class="project-title">1P13 - Project 1</h1>
+          </div>
 
-      <div class="info-rectangle">
+        <div class="info-rectangle">
           <div class="info-text">
               <div class="text-content-middle">
                   <h2>Objective</h2>
@@ -61,7 +65,6 @@
                       <br>- Engineer a system that authenticates users, scans packages, computes costs, and packs them efficiently.
                   </p>
               </div>
-
               <p class="image-caption" id="caption-objective">figure 1 - The Quanser Arm (Qarm)</p>
           </div>
           
@@ -72,70 +75,156 @@
           </div>
       </div>
 
-      <div class="info-rectangle">
+          <div class="info-rectangle">
+              <div class="info-text">
+                  <div class="text-content-middle">
+                      <h2>My Role</h2>
+                      <p>
+                          <br>- Lead the <b>Python</b> programming by assembling and testing our team functions to optimize performance and ensure proper documentation.
+                          <br>- Managed the software verification and integration process by <b>debugging</b> the overall system, guaranteeing a working product.
+                          <br>- Advised on the mechanical design by proposing features from my individual <b>Autodesk Inventor</b> CAD model.
+                      </p>
+                  </div>
+                  <p class="image-caption" id="caption-role">figure 1 - A snippet from my lookup_products() function</p>
+              </div>
+              <div class="info-image-container">
+                  <button class="nav-arrow prev" onclick="changeImage('role', -1)">&#10094;</button>
+                  <img id="img-role" src="assets/code-snippet.jpg" alt="Project Image">
+                  <button class="nav-arrow next" onclick="changeImage('role', 1)">&#10095;</button>
+              </div>
+          </div>
+
+          <div class="info-rectangle">
+              <div class="info-text">
+                  <div class="text-content-middle">
+                      <h2>Reflection</h2>
+                      <p>
+                          <br>- Questioning my initial design approach caused me to pivot to a simpler, and more reliable final CAD model.
+                          <br>- If I could redo this project, I would focus more on time management to make sure all features of the project were tested and working on time.
+                          <br>- Overall, I learned much about teamwork in an engineering context, and I can't wait to apply these skills in future projects!
+                      </p>
+                  </div>
+                  <p class="image-caption" id="caption-reflection">figure 1 - A photo of the team :)</p>
+              </div>
+              <div class="info-image-container">
+                  <img id="img-reflection" src="assets/fri-45.jpg" alt="Project Image">
+              </div>
+          </div>
+      </div> 
+      
+      <div id="project3" class="project-section">
+          <div class="title" style="margin-top: 20px;">
+            <h1 class="project-title2">1P13 - Project 3</h1>
+          </div>
+
+        <div class="info-rectangle">
           <div class="info-text">
               <div class="text-content-middle">
-                  <h2>My Role</h2>
+                  <h2>Objective</h2>
                   <p>
-                      <br>- Lead the <b>Python</b> programming by assembling and testing our team functions to optimize performance and ensure proper documentation.
-                      <br>- Managed the software verification and integration process by <b>debugging</b> the overall system, guaranteeing a working product.
-                      <br>- Advised on the mechanical design by proposing feautures from my individual <b>Autodesk Inventor</b> CAD model.
+                      <br>- Make something that could be useful to our <b>Client</b>, who suffers from rheumatoid arthritis.
+                      <br>- Take into account certain constraints such as <b>cost</b>, <b>portability</b>, and <b>user-friendliness</b>.
+                      <br>- Design, prototype, and test what you make so that it meets the client's needs and constraints.
                   </p>
-              </div>
+                  
+                  <div id="more-objective" style="display: none;">
+                      <h3>Objective - In Depth</h3>
+                      <p>
+                          Our client is a wheelchair user who experiences limited hand functionality and reduced joint strength due to rheumatoid arthritis. He relies on his service dog, but struggles with standard dog waste collectors since they require too much grip tension for his hand joints to comfortably operate. My team and I were tasked with engineering a new mechanical scooper that completely bypassed the need for fine finger dexterity.
+                          <br><br>
+                          The initial core objective was to design a system that allowed Mark to operate the scooping claw using broader strength of his whole arm rather than pinching his fingers. After discussing this idea with my team, we decided the best thing to do was purchase a pole rather than designing one from scratch, since it would save us a lot of time and allow us to focus on the actual scooping mechanism. We needed to balance all of these requirements while staying within a strict $100 budget constraint.
+                          <br><br>
+                      </p>
+                  </div>
 
-              <p class="image-caption" id="caption-role">figure 1 - A snippet from my lookup_products() function</p>
+                  <button class="read-more-btn" onclick="openModal('more-objective')">Read More</button>
+
+              </div>
+              <p class="image-caption" id="caption-objective">figure 1 - our client</p>
           </div>
           
           <div class="info-image-container">
-              <button class="nav-arrow prev" onclick="changeImage('role', -1)">&#10094;</button>
-              <img id="img-role" src="assets/code-snippet.jpg" alt="Project Image">
-              <button class="nav-arrow next" onclick="changeImage('role', 1)">&#10095;</button>
+              <img id="img-objective" src="assets/client.png" alt="Project Image">
           </div>
       </div>
 
-      <div class="info-rectangle">
+        <div class="info-rectangle">
+          <div class="info-text">
+              <div class="text-content-middle">
+                  <h2>Role</h2>
+                  <p>
+                      <br>- I was tasked with <b>researching</b> the best materials for the task, and I found PLA to be the best!
+                      <br>- I conducted <b>tests</b> on our final prototype, to ensure it was functioning properly.
+                      <br>- I contributed to the final design by suggesting features such as a telescoping pole, and bag clip.
+                  </p>
+                  
+                  <div id="more-role" style="display: none;">
+                      <h3>Role - In Depth</h3>
+                      <p>
+                          I led the material research and analytical prototyping for this project. Initially, I looked at materials like Carbon Fiber and Aluminum 6061 for their strength to weight ratios and natural vibration dampening. However, to keep the project cost effective and accessible, I determined that standard PLA was the best for our project since it provides the necessary durability and lightweight properties while remaining under our budget constraint.
+                          <br><br>
+                          Moving to Autodesk Inventor, I focused on designing the physical mechanism. I wanted to eliminate the standard trigger entirely. Instead, I modeled a sliding handle mechanism; the client could simply pull his whole arm backward along a sliding bar to close the scooper, drastically reducing the tensile force required. As I mentioned in <b>objectives</b>, we did not move forward with this since we bought a telescoping pole to save time.
+                          <br><br>
+                          During the conceptual phase, I explored a telescoping stick to solve the portability constraint. But visualizing how it would fit into my original prototype held me back from pursuing the idea. I scrapped designing a telescoping pole, and made a foldable design instead. This pivot was a success, maintaining a low storage volume while ensuring the internal string mechanism operated smoothly.
+                          <br><br>
+                          This challenge reshaped my perspective on engineering design. I learned that isolating features during brainstorming, like focusing purely on portability without considering how the mechanical actuation would function alongside it, can lead you down the wrong path. Moving forward in my career, I will prioritize simulating the physical system of my idea before actually shipping it into production, ensuring time and budget are spent on viable physical solutions rather than failed concepts. 
+                      </p>
+                  </div>
+
+                  <button class="read-more-btn" onclick="openModal('more-role')">Read More</button>
+
+              </div>
+              <p class="image-caption" id="caption-role3">figure 1 - Our final CAD prototype</p>
+          </div>
+          
+          <div class="info-image-container">
+              <button class="nav-arrow prev" onclick="changeImage('role3', -1)">&#10094;</button>
+              <img id="img-role3" src="assets/FinalScoop.png" alt="Project Image">
+              <button class="nav-arrow next" onclick="changeImage('role3', 1)">&#10095;</button>
+          </div>
+      </div>
+
+        <div class="info-rectangle">
           <div class="info-text">
               <div class="text-content-middle">
                   <h2>Reflection</h2>
                   <p>
-                      <br>- Questioning my initial design approach caused me to pivot to a simpler, and more reliable final CAD model.
-                      <br>- If I could redo this project, I would focus more on time management to make sure all features of the project were tested and working on time.
-                      <br>- Overall, I learned much about teamwork in an engineering context, and I can't wait to apply these skills in future projects!
+                      <br>- I learned that early iteration is key to a successful project, since it allows for flexibility with time.
+                      <br>- Communication is something we prioritized as a team, and it led to flawless integration since we were all on the same page.
+                      <br>- If I could redo this project, I would make sure to attack challenges as soon as they come up, since it saves a lot of time in the future.
                   </p>
-              </div>
+                  
+                  <div id="more-reflection" style="display: none;">
+                      <h3>Reflection - In Depth</h3>
+                      <p>
+                        With a team of 5 individuals, we were tasked with engineering something for a client named Mark. As a team, we discussed our thoughts on the information provided on Mark, and decided on designing a dog poop scooper to help him with his struggles in picking up after his dog. The first thing we prioritized was thorough research. With the given information, such as the fact that he struggles to grip his current scooper due to the low amount of tension, we wanted to find the best materials for the challenge. I was tasked with researching materials and found that using standard PLA, which is a renewable thermoplastic used for 3D printing, would be best for the end of the scooper. PLA is lightweight and extremely customizable, which are important properties for our project. We went over our research as a team, and then started working on the physical product. We went through around 3 CAD based prototypes in total, and the design improved with each prototype. One challenge we faced through iteration was deciding how we would go about deciding on the pole for our mechanism. We spent a lot of time speaking about it as a team, and decided the best thing to do was buy a durable telescoping pole online, that way we could spend more time on the actual end of our mechanism. The outcome of communicating and testing early was having a lot more time to finalize our project in the future. By overcoming the obstacle of pole selection early on, we had plenty of time to attack other challenges of the project. Honestly, if we had done anything different such as delaying our decision making I think we wouldn’t have as much time to actually test the functionality of our mechanism, since we would be so caught up with deciding on how to approach the pole. From this experience, I learned that communicating effectively as a team leads to things getting done much faster. This is extremely valuable since good time management is an important skill to have as an engineer. In my future endeavors, I plan on prioritizing communication with the team, early iteration, and thorough research to save time in the future. 
+                      </p>
+                  </div>
 
-              <p class="image-caption" id="caption-reflection">figure 1 - A photo of the team :)</p>
+                  <button class="read-more-btn" onclick="openModal('more-reflection')">Read More</button>
+
+              </div>
+              <p class="image-caption" id="caption-reflection">figure 1 - An Award Our Team Won! </p>
           </div>
           
           <div class="info-image-container">
-              <img id="img-reflection" src="assets/fri-45.jpg" alt="Project Image">
+              <img id="img-reflection3" src="assets/fri-38.jpg" alt="Project Image">
           </div>
       </div>
+      </div> 
+    </main>
 
-    <div class="title">
-      <h1 class="project-title2">1P13 - Project 3</h1>
+    <section class="footer">
+      <p class="footer-text">© 2026 Majock Bim. All rights reserved.</p>
+    </section>
+
+    <div id="project-modal" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body-content">
+                </div>
+        </div>
     </div>
 
-      <div class="info-rectangle">
-          <div class="info-text2">
-              <div class="text-content-middle">
-                  <h2>In Depth Reflection</h2>
-                  <p class="txt-size">
-                    With a team of 5 individuals, we were tasked with engineering something for a client named Mark. As a team, we discussed our thoughts on the information provided on Mark, and decided on designing a dog poop scooper to help him with his struggles in picking up after his dog. The first thing we prioritized was thorough research. With the given information, such as the fact that he struggles to grip his current scooper due to the low amount of tension, we wanted to find the best materials for the challenge. I was tasked with researching materials and found that using standard PLA, which is a renewable thermoplastic used for 3D printing, would be best for the end of the scooper. PLA is lightweight and extremely customizable, which are important properties for our project. We went over our research as a team, and then started working on the physical product. We went through around 3 CAD based prototypes in total, and the design improved with each prototype. One challenge we faced through iteration was deciding how we would go about deciding on the pole for our mechanism. We spent a lot of time speaking about it as a team, and decided the best thing to do was buy a durable telescoping pole online, that way we could spend more time on the actual end of our mechanism. The outcome of communicating and testing early was having a lot more time to finalize our project in the future. By overcoming the obstacle of pole selection early on, we had plenty of time to attack other challenges of the project. Honestly, if we had done anything different such as delaying our decision making I think we wouldn’t have as much time to actually test the functionality of our mechanism, since we would be so caught up with deciding on how to approach the pole. From this experience, I learned that communicating effectively as a team leads to things getting done much faster. This is extremely valuable since good time management is an important skill to have as an engineer. In my future endeavors, I plan on prioritizing communication with the team, early iteration, and thorough research to save time in the future. 
-
-                  </p>
-              </div>
-
-          </div>
-          
-          <div class="info-image-container">
-              <img id="img-reflection" src="assets/fri-38.jpg" alt="Project Image">
-          </div>
-      </div>
-
-    </main>
-    <section class="footer">
-      <p class="footer-text">© 2025 Majock Bim. All rights reserved.</p>
-    </section>
 </body>
 </html>
