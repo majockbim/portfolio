@@ -302,3 +302,95 @@ body {
 .project-section.active-project {
     display: flex;
 }
+
+/* dark background overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(5px); 
+    z-index: 1000; 
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.show {
+    display: flex; 
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-content {
+    background: #ffffff;
+    width: 90%;
+    max-width: 650px; 
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    animation: slideUp 0.3s ease forwards;
+}
+
+.modal-content h3 {
+    color: #982f2a;
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.modal-content p {
+    color: #333;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #888;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #982f2a;
+}
+
+.read-more-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #982f2a;
+    border: 2px solid #982f2a;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #982f2a;
+    color: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

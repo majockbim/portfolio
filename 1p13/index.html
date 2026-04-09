@@ -61,23 +61,36 @@
           </div>
 
           <div class="info-rectangle">
-              <div class="info-text">
-                  <div class="text-content-middle">
-                      <h2>Objective</h2>
+          <div class="info-text">
+              <div class="text-content-middle">
+                  <h2>Objective</h2>
+                  <p>
+                      <br>- Design and CAD a mechanical end effector that mounts to a <b>Quanser Arm</b>.
+                      <br>- Develop software to determine products to be packaged, and for control of the robotic arm's movement.
+                      <br>- Engineer a system that authenticates users, scans packages, computes costs, and packs them efficiently.
+                  </p>
+                  
+                  <div id="more-objective" style="display: none;">
+                      <h3>Objective - In Depth</h3>
                       <p>
-                          <br>- Design and CAD a mechanical end effector that mounts to a <b>Quanser Arm</b>.
-                          <br>- Develop software to determine products to be packaged, and for control of the robotic arm's movement.
-                          <br>- Engineer a system that authenticates users, scans packages, computes costs, and packs them efficiently.
+                          The end effector needed to securely grasp various payload shapes without dropping them during transit. We utilized rapid prototyping with 3D printing to test different claw geometries. The software stack was built in Python, integrating computer vision to identify boxes on a turntable, calculate their dimensions, and sort them into appropriate bins using inverse kinematics.
+                          <br><br>
+                          (Add as much text as needed here to test the scrolling feature. modal will handle it)
                       </p>
                   </div>
-                  <p class="image-caption" id="caption-objective">figure 1 - The Quanser Arm (Qarm)</p>
+
+                  <button class="read-more-btn" onclick="openModal('more-objective')">Read More</button>
+
               </div>
-              <div class="info-image-container">
-                  <button class="nav-arrow prev" onclick="changeImage('objective', -1)">&#10094;</button>
-                  <img id="img-objective" src="assets/qarm.jpg" alt="Project Image">
-                  <button class="nav-arrow next" onclick="changeImage('objective', 1)">&#10095;</button>
-              </div>
+              <p class="image-caption" id="caption-objective">figure 1 - The Quanser Arm (Qarm)</p>
           </div>
+          
+          <div class="info-image-container">
+              <button class="nav-arrow prev" onclick="changeImage('objective', -1)">&#10094;</button>
+              <img id="img-objective" src="assets/qarm.jpg" alt="Project Image">
+              <button class="nav-arrow next" onclick="changeImage('objective', 1)">&#10095;</button>
+          </div>
+      </div>
 
           <div class="info-rectangle">
               <div class="info-text">
@@ -139,5 +152,14 @@
     <section class="footer">
       <p class="footer-text">© 2026 Majock Bim. All rights reserved.</p>
     </section>
+
+    <div id="project-modal" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body-content">
+                </div>
+        </div>
+    </div>
+
 </body>
 </html>
