@@ -13,6 +13,21 @@ const projectData = {
         images: ["assets/fri-45.jpg"],
         captions: ["figure 1 - A photo of the team :)",],
         currentIndex: 0
+    },
+    objective3: {
+    images: ["assets/client.png"],
+    captions: ["figure 1 - the client"],
+    currentIndex: 0
+    },
+    role3: {
+        images: ["assets/FinalScoop.png", "assets/rake.png"],
+        captions: ["figure 1 - Our final CAD prototype", "figure 2 - A rake prototype"],
+        currentIndex: 0
+    },
+    reflection3: {
+        images: ["assets/fri-45.jpg"],
+        captions: ["figure 1 - A photo of the team :)",],
+        currentIndex: 0
     }
 };
 
