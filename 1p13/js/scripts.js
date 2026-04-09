@@ -25,8 +25,8 @@ const projectData = {
         currentIndex: 0
     },
     reflection3: {
-        images: ["assets/fri-45.jpg"],
-        captions: ["figure 1 - A photo of the team :)",],
+        images: ["assets/fri-38.jpg"],
+        captions: ["figure 1 - An award our tema won!",],
         currentIndex: 0
     }
 };
@@ -43,17 +43,24 @@ function changeImage(section, direction) {
     const imgElement = document.getElementById(`img-${section}`);
     const captionElement = document.getElementById(`caption-${section}`);
 
-    if (imgElement && captionElement) {
+    // Separated these so the image still changes even if the caption is missing/wrong ID
+    if (imgElement) {
         imgElement.src = data.images[data.currentIndex];
+    }
+    if (captionElement) {
         captionElement.innerText = data.captions[data.currentIndex];
     }
 }
 
-// INITIALIZE ALL THREE
+// INITIALIZE ALL IMAGES
 window.addEventListener('DOMContentLoaded', () => {
     changeImage('objective', 0);
     changeImage('role', 0);
     changeImage('reflection', 0);
+    
+    changeImage('objective3', 0);
+    changeImage('role3', 0);
+    changeImage('reflection3', 0);
 });
 
 function showProject(projectId, clickedButton) {
